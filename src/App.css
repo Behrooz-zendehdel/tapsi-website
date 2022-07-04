@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@100;200;300;400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #ff5722;
+  --secondry-color: #2266f4;
+  --background-color: #e9e7e7;
+  --font-color-secondry: #808080;
+  --font-color-primary: #fff;
+}
+body {
+  background-color: var(--background-color);
+  height: 100vh;
+  font-family: "Arima", cursive;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo img {
+  width: 30px;
+  height: 30px;
+}
+.logo span {
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.navbar-list ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.navbar-list ul li {
+  padding: 0 15px;
+  list-style-type: none;
+}
+.navbar-list ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+}
+.navbar-list ul li a:hover {
+  color: var(--primary-color);
+}
+.navbar-list button {
+  padding: 10px 30px;
+  background-color: var(--primary-color);
+  color: var(--font-color-primary);
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+.header-price {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 50px;
+  background-color: orange;
+  align-items: center;
+}
+.header-price p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn-price {
+  padding: 10px 10px;
+  background-color: var(--secondry-color);
+  color: var(--font-color-primary);
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
