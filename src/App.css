@@ -6,6 +6,7 @@
   --background-color: #e9e7e7;
   --font-color-secondry: #808080;
   --font-color-primary: #fff;
+  direction: rtl;
 }
 body {
   background-color: var(--background-color);
@@ -24,10 +25,15 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .logo img {
   width: 30px;
   height: 30px;
 }
+.logo:hover span {
+  color: var(--primary-color);
+}
+
 .logo span {
   font-size: 20px;
   font-weight: 700;
@@ -37,7 +43,6 @@ body {
 .navbar-list ul {
   display: flex;
   align-items: center;
-  flex-direction: row-reverse;
 }
 .navbar-list ul li {
   padding: 0 15px;
@@ -81,4 +86,112 @@ body {
   border: none;
   font-weight: 600;
   cursor: pointer;
+}
+.header {
+  background: url(./assets/header.tapsi.webp) no-repeat center center/cover;
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 40px;
+  background-color: rgba(1, 15, 63, 0.4);
+  position: absolute;
+  right: 100px;
+  top: 100px;
+  bottom: 30px;
+  border-radius: 15px;
+}
+.right h1 {
+  margin-right: 10px;
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--background-color);
+}
+.right h4 {
+  margin-right: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--background-color);
+}
+.list-button {
+  margin: 30px 20px 0 0;
+  display: grid;
+  grid-template-columns: 150px 150px;
+  grid-template-rows: 50px 50px;
+  gap: 0.5rem;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+.top {
+  border: none;
+}
+.bottom {
+  background-color: transparent;
+  border: 2px solid var(--background-color);
+  color: var(--font-color-primary);
+  font-size: 14px;
+  font-weight: 600;
+}
+.bottom:hover {
+  opacity: 0.8;
+}
+.left {
+  position: absolute;
+  left: 70px;
+  top: 120px;
+}
+.left img {
+  width: 400px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.services {
+  margin: 9rem 3rem;
+}
+
+.services h1 {
+  margin-top: 3rem;
+}
+.line {
+  display: flex;
+  padding-right: 3rem;
+  flex-wrap: wrap;
+}
+.line ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 5rem;
+}
+.serviceline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.serviceline img {
+  width: 70px;
+  height: 40px;
+  opacity: 0.5;
+}
+.serviceline img:hover {
+  opacity: 1;
+}
+.serviceline a {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--font-color-secondry);
 }
