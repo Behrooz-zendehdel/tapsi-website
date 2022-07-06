@@ -12,21 +12,21 @@ const Header = () => {
         <h4>اپلیکیشن درخواست خودرو و پیک</h4>
         <div className="list-button">
           <button className="btn top">
-            <AiOutlineArrowDown />
+            <AiOutlineArrowDown style={{ marginLeft: "5px" }} />
             دانلود اپلیکیشن مسافران
           </button>
           <button className="btn top">
-            <SiPwa />
+            <SiPwa style={{ marginLeft: "5px" }} />
             وب اپلیکیشن مسافران
           </button>
 
           <button className="btn  bottom">
-            <AiOutlineArrowDown />
+            <AiOutlineArrowDown style={{ marginLeft: "5px" }} />
             دانلود اپلیکیشن رانندگان
           </button>
           <button className="btn bottom">
-            <AiOutlineCar />
-              ثبت نام راننده
+            <AiOutlineCar style={{ marginLeft: "5px" }} />
+            ثبت نام راننده
           </button>
         </div>
       </div>
